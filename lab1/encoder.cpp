@@ -45,7 +45,7 @@ int main() {
     string encoded_data = base64_encode(file);
     file.close();
 
-    ofstream afile("oded.txt", ios_base::out);
+    ofstream afile("encoded.txt", ios_base::out);
 	if (afile.is_open()) {
 		const size_t line_length = 76;
         for (size_t i = 0; i < encoded_data.size(); i += line_length) {
